@@ -145,8 +145,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': str(os.getenv('CLIENT_ID_GITHUB')),
-            'secret': str(os.getenv('SECRET_GITHUB')),
+            'client_id': os.getenv('CLIENT_ID_GITHUB'),
+            'secret': os.getenv('SECRET_GITHUB'),
             'key': ''
         }
     }
